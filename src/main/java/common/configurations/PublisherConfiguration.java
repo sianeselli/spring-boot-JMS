@@ -1,10 +1,10 @@
-package configurations;
+package common.configurations;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
-@ImportResource("classpath*:configurations/spring-context.xml")
+@ImportResource("classpath*:configurations/common-spring-context.xml")
 @Configuration
-public class HelloWorldConfiguration {
+public class PublisherConfiguration {
 
 }

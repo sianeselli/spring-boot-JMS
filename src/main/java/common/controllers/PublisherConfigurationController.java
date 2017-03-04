@@ -1,4 +1,4 @@
-package controllers;
+package common.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import services.api.HelloWorldService;
-
-import configurations.HelloWorldConfiguration;
+import common.configurations.PublisherConfiguration;
+import common.services.api.HelloWorldService;
 
 @Controller
 @EnableAutoConfiguration
-@Import({ HelloWorldConfiguration.class })
-@RequestMapping("/config")
-public class ConfigurationController {
+@Import({ PublisherConfiguration.class })
+@RequestMapping("/${service.root.path:}/config")
+public class PublisherConfigurationController {
 
 	@Autowired
 	private HelloWorldService helloWorldService;

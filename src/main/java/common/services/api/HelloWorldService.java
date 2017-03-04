@@ -1,4 +1,4 @@
-package services.api;
+package common.services.api;
 
 //Test PR - MAster change
 public interface HelloWorldService {

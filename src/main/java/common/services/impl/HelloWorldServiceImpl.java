@@ -1,9 +1,9 @@
-package services.impl;
+package common.services.impl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import services.api.HelloWorldService;
+import common.services.api.HelloWorldService;
 
 @Service
 public class HelloWorldServiceImpl implements HelloWorldService {

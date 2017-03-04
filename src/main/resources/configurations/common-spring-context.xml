@@ -8,7 +8,7 @@
          http://www.springframework.org/schema/context/spring-context-3.0.xsd">
          
    <context:annotation-config/>      
-   <context:component-scan base-package="services"/>
-   <bean name="helloWorldService" class="services.impl.HelloWorldServiceImpl"></bean>
+   <context:component-scan base-package="common.services"/>
+   <bean name="helloWorldService" class="common.services.impl.HelloWorldServiceImpl"></bean>
 
 </beans>
